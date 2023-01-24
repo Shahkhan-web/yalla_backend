@@ -1,0 +1,55 @@
+[
+    {
+        "username": "dave1",
+        "roles": {
+            "User": 2001
+        },
+        "password": "$2b$10$oEbHZlazDHE1YnnJ4XdpGuGh9a/JZOO7Xe6WZtRRsSMgprxMXnKza",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRhdmUxIiwiaWF0IjoxNjMzOTkyMjkwLCJleHAiOjE2MzQwNzg2OTB9.U85HVX_gcDZkHHSRWeo7AHfIe7q9i03dGW2ed3fHqAk"
+    },
+    {
+        "username": "walt2",
+        "roles": {
+            "User": 2001,
+            "Editor": 1984
+        },
+        "password": "$2b$10$cvfmz./teMWDccIMChAxZ.HqgL3eoQGYTm1z9lGy5iRf8D7NNargC",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQyIiwiaWF0IjoxNjMzOTkyNDU2LCJleHAiOjE2MzQwNzg4NTZ9.wRVJbN7_67JyTW9PALMWWEsO4BMkehyy5kXq6WilvWc"
+    },
+    {
+        "username": "walt1",
+        "roles": {
+            "User": 2001,
+            "Editor": 1984,
+            "Admin": 5150
+        },
+        "password": "$2b$10$33Q9jtAoaXC4aUX9Bjihxum2BHG.ENB6JyoCvPjnuXpITtUd8x8/y",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQxIiwiaWF0IjoxNjMzOTkyNTY0LCJleHAiOjE2MzQwNzg5NjR9.gE2CgbtEuqE42LeJ4dP6APmqyGTNBh53WXVyDdP47yM"
+    },
+    {
+        "username": "user",
+        "roles": {
+            "User": 2001
+        },
+        "password": "$2b$10$xSbvxKUdCJVtEctdrhM4lOHfrDUAtCe6QoHoAQ4ho/GKpb3ANOfB.",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpYXQiOjE2NzQwNDM2MjksImV4cCI6MTY3NDEzMDAyOX0.gwpipe2U6bDu76Oth3gJaQtsQk09_FON9jTnw6aKcmY"
+    },
+    {
+        "username": "user1",
+        "roles": {
+            "User": 2001
+        },
+        "password": "$2b$10$WKw4ld3QMK/NhtxcwZUqAuGjH30Kw44aNMjXRkySzKDx8x6AyUbIG",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNjc0MDQ1MDM1LCJleHAiOjE2NzQxMzE0MzV9.kuucebAJIq7HRes-OsskVdv_jlIeNBYKFTeW59p4ZA8"
+    },
+    {
+        "username": "usern",
+        "roles": {
+            "User": 2001,
+            "Editor": 1984,
+            "Admin": 5150
+        },
+        "password": "$2b$10$8TuwkV/ktxvcvmuo0.yhjuoat12j6ciZw10JFeSWFK8DBC3YzkWz2",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuIiwiaWF0IjoxNjc0MDQ2NDA2LCJleHAiOjE2NzQxMzI4MDZ9.dz0l-It1-9toOXfzL2AQlxqtsgYdDj9B_flH-2w2dNU"
+    }
+]

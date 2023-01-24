@@ -1,0 +1,24 @@
+20230118	16:20:23	cbf01185-bd5e-4039-b95f-1847f2f2e714	RangeError: Invalid status code: test
+20230118	16:21:37	219014ca-1af0-4298-b333-4a1cbf33d9ac	TypeError: res.Status is not a function
+20230118	16:23:43	a99e3b77-8b05-4e5b-ae75-5c8e0ac4bf09	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+20230118	16:24:16	48fb3917-fd40-4caf-a738-53eb053be7e2	TypeError: req.toJSON is not a function
+20230118	16:24:46	8f991d39-72bb-4b3a-8259-04568059aab2	TypeError: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function toString
+20230119	03:15:59	da291752-3f14-4d06-bd5d-b9e6b6560776	SyntaxError: Unexpected string in JSON at position 74
+20230119	03:43:52	12a7b298-deb5-4e00-8920-c986bd500efb	SyntaxError: Unexpected number in JSON at position 15
+20230122	13:29:23	a67545fd-f444-4e2c-bb1c-6e985475dd2c	SyntaxError: Unexpected number in JSON at position 133
+20230122	13:30:01	a0f54322-a0f8-4a32-bd52-c4432605be3c	SyntaxError: Unexpected number in JSON at position 133
+20230122	13:31:39	fde7aaf7-f401-4dc7-a3cc-b578a52916af	SyntaxError: Unexpected number in JSON at position 133
+20230122	21:24:35	6c2a0d13-e147-425a-8e23-4bb4252166d8	Error: Not allowed by CORS
+20230122	21:24:35	95dd5794-9310-4acb-9610-f0d4281886d2	Error: Not allowed by CORS
+20230122	21:24:39	3ec57692-61d5-4462-b775-38bcb56c8b23	Error: Not allowed by CORS
+20230123	15:50:57	0a8550e2-324b-404b-82b4-bbbfbf598182	SyntaxError: Unexpected token : in JSON at position 284
+20230123	15:57:52	c9b19ed6-8641-4d7f-b88c-68ca3bd93919	SyntaxError: Unexpected token 
+ in JSON at position 91
+20230123	16:22:20	01ef1a1c-80fd-486d-9e7c-932dd2e8091a	RangeError: Invalid status code: ho
+20230123	19:53:38	77d4d83d-bd46-4158-8cef-089e91d7d5d7	TypeError: res.send is not a function
+20230124	13:22:24	8626bf10-33df-42bf-9d23-bca67f6d49f1	ReferenceError: res is not defined
+20230124	13:22:38	630af872-e7ab-4d16-b4ef-3d6849ce5cb0	ReferenceError: test is not defined
+20230124	13:23:06	35902468-cd60-4e7d-b925-7ddd93e8de1f	ReferenceError: json is not defined
