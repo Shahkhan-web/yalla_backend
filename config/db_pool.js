@@ -11,6 +11,7 @@ const use_db = async (query) => {
       port: 5432,
       host: "localhost",
     }); 
+
     await client.connect();
     const res = await client.query(query); 
     await client.end(); 
@@ -20,6 +21,5 @@ const use_db = async (query) => {
     return error;
   }
 };
-
 
 module.exports = {use_db};

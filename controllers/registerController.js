@@ -4,9 +4,9 @@ const { use_db } = require("../config/db_pool");
 
 const handleNewUser = async (req, res) => {
 
-  const { user, password, email, roles } = req.body;
+  const { username, password, email, roles } = req.body;
 
-  if ((!user || !password, !email))
+  if ((!username || !password, !email))
     return res.status(400).json({ message: "please fill all fields" });
 
   try {
@@ -19,7 +19,7 @@ const handleNewUser = async (req, res) => {
     let assignable_roles = {...roles , ...default_roles}
     //store the new user
     const newUser = {
-      username: user,
+      username: username,
       email: email,
       roles: JSON.stringify(assignable_roles) || JSON.stringify(default_roles),
       password: hashedPwd,
