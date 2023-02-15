@@ -1,4 +1,3 @@
-const { fr } = require("date-fns/locale");
 const express = require("express");
 const router = express.Router();
 
@@ -16,7 +15,8 @@ const {
   getnationality,
   getenglish,
   getcurrent_locations,
-  getall
+  getall,
+  getgenders
 } = require("../../../controllers/teachers/teacher_options");
 
 router.route("/").get(getall);
@@ -34,6 +34,7 @@ router.route("/getdesired_locations").get(getdesired_location)
 router.route("/getnationality").get(getnationality)
 router.route("/getenglish").get(getenglish)
 router.route("/getcurrent_location").get(getcurrent_locations)
+router.route("/getgender").get(getgenders)
 
 
 module.exports = router;

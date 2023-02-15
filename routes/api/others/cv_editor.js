@@ -2,6 +2,7 @@ const express = require("express");
 const ROLES_LIST = require("../../../config/roles_list");
 const router = express.Router();
 const edit_cv_Controller = require("../../../controllers/othes/cv_editor");
+const delete_cv_Controller = require("../../../controllers/othes/cv_editor_delete")
 const verifyRoles = require("../../../middleware/verifyRoles");
 
 router.route("/marital_status").post(verifyRoles(ROLES_LIST.admin), edit_cv_Controller.update_marital_status);
@@ -17,5 +18,7 @@ router.route("/license").post(verifyRoles(ROLES_LIST.admin), edit_cv_Controller.
 router.route("/gender").post(verifyRoles(ROLES_LIST.admin), edit_cv_Controller.update_gender);
 router.route("/curriculum").post(verifyRoles(ROLES_LIST.admin), edit_cv_Controller.update_curriclum);
 
+
+router.route("/gender").delete(verifyRoles(ROLES_LIST.admin), delete_cv_Controller.delete_gender);
 
 module.exports = router;

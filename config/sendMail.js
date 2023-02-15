@@ -22,7 +22,7 @@ transporter.use(
 );
 
 async function sendmail(data) {
-  console.log(data)
+  console.log(data) 
   const mailOptions = {
     from: "arctiguana12@gmail.com", // sender address
     to: data.email, // list of receivers
@@ -33,9 +33,10 @@ async function sendmail(data) {
     context: {
       name: data?.name,
       email: data?.email,
+      school_email: data?.school_email,
       message: data?.message,
       link:data?.link,
-      school:data?.school
+      school:data?.school 
     },
   };
 

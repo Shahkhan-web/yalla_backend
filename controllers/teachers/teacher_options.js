@@ -91,6 +91,13 @@ const getcurrent_locations = async (req, res) => {
     res.json({ current_location: i.rows });
   });
 };
+const getgenders = async (req, res) => {
+  await use_db(
+    `select gender from teacher_options where gender != ''`
+  ).then((i) => {
+    res.json({ gender: i.rows });
+  });
+};
 const getall = async (req, res) => {
   const subjects = await use_db(
     `select subjects from teacher_options where subjects != '';`
@@ -162,6 +169,7 @@ const getall = async (req, res) => {
   res.json(data);
 };
 module.exports = {
+  getgenders,
   getsubjects,
   getteaching_exp,
   getsalary_expectations,

@@ -6,7 +6,7 @@ const mail = async (req, res) => {
   const data = {
     subject,
     school,
-    email,
+    email, 
     cc,
     html,
     template
@@ -19,6 +19,31 @@ const mail = async (req, res) => {
     return error
   }
 };
+const school_wish = async (req, res) => {
+  const {email,name} = req.body;
+  console.log('hi')
+
+  const data = {
+    name: name,
+    email: "arctiguana12@gmail.com",
+    school_email:email,
+    subject: "New School entry - Yalla Recruitment",
+    template:"school_wished"
+  };
+  if(!name || !email){
+    res.status(401).json({err:'enter proper data'})
+ }
+  console.log('data',data)
+  try {
+    sendmail(data);
+    res.json({"status":"success"})
+    return
+  } catch (error) {
+    res.json(error)
+    return error
+  }
+};
 module.exports = {
   mail,
+  school_wish
 };
