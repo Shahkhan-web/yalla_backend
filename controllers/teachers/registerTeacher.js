@@ -27,6 +27,7 @@ const add_teacher = async (req, res) => {
     dependents,
     location,
     nationality,
+    linkedIn,
     roles,
   } = req.body;
 
@@ -61,7 +62,8 @@ const add_teacher = async (req, res) => {
             desired_location,
             english_level,
             nationality,
-            gc_exp) VALUES 
+            gc_exp,
+            linkedIn) VALUES 
             (
                 ${user_id},
                 '${phoneNumber}',
@@ -85,7 +87,8 @@ const add_teacher = async (req, res) => {
                 '${preferTeaching}',
                 '${englishProficiency}',
                 '${nationality}',
-                '${experienceInMiddleEast}'
+                '${experienceInMiddleEast}',
+                '${linkedIn}'
             );`)
         .then((message) => {
           if (message.command === "INSERT") {

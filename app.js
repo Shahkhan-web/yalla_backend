@@ -61,6 +61,10 @@ app.use("/stats", require("./routes/api/others/stats"));
 //password reset
 app.use("/forgot_password",require("./routes/auth/password_reset"))
 
+//contact queries
+app.use("/send_query",require('./routes/api/others/send_query'))
+app.use("/get_query",require('./routes/api/others/getqueries'))
+
 app.use(verifyJWT);
 
 app.use("/mail", require("./routes/api/others/mail"));
