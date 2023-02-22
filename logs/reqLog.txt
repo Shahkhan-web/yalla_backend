@@ -23175,3 +23175,9 @@
 20230222	17:38:10	e3ef82fc-8855-4ce5-82af-4fbf82a78910	POST	http://localhost:4200	/send_query
 20230222	17:44:22	5a99a4f7-f04d-4d6d-b007-640d5d160ae8	OPTIONS	http://localhost:4200	/send_query
 20230222	17:44:23	376e6cba-fb15-4cf7-b26c-01a283e7bf12	POST	http://localhost:4200	/send_query
+20230222	17:59:12	2186840e-a11a-4749-965d-31c9c8c77334	OPTIONS	http://localhost:4200	/send_query
+20230222	17:59:12	8d84e759-90af-44bb-a518-57b887ab566d	POST	http://localhost:4200	/send_query
+20230222	18:01:27	30613d1e-4cb1-45da-a14b-5c42429acdbe	OPTIONS	http://localhost:4200	/send_query
+20230222	18:01:27	0f29af35-354b-4f9a-93f7-216ac2084fa6	POST	http://localhost:4200	/send_query
+20230222	18:01:55	672be5e9-7156-493b-a63c-0fe49feba4bd	OPTIONS	http://localhost:4200	/send_query
+20230222	18:01:55	76cf2c54-a4d8-4dea-ac7a-33c489dff90e	POST	http://localhost:4200	/send_query
