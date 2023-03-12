@@ -16,7 +16,9 @@ const {
   getenglish,
   getcurrent_locations,
   getall,
-  getgenders
+  getgenders,
+  getcurriculems,
+  getlicense
 } = require("../../../controllers/teachers/teacher_options");
 
 router.route("/").get(getall);
@@ -35,6 +37,7 @@ router.route("/getnationality").get(getnationality)
 router.route("/getenglish").get(getenglish)
 router.route("/getcurrent_location").get(getcurrent_locations)
 router.route("/getgender").get(getgenders)
-
+router.route('/getcurriculems').get(getcurriculems)
+router.route('/getlicense').get(getlicense)
 
 module.exports = router;

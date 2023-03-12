@@ -92,11 +92,25 @@ const getcurrent_locations = async (req, res) => {
   });
 };
 const getgenders = async (req, res) => {
-  await use_db(
-    `select gender from teacher_options where gender != ''`
-  ).then((i) => {
-    res.json({ gender: i.rows });
-  });
+  await use_db(`select gender from teacher_options where gender != ''`).then(
+    (i) => {
+      res.json({ gender: i.rows });
+    }
+  );
+};
+const getcurriculems = async (req, res) => {
+  await use_db(`select curriclum from teacher_options  where curriclum != ''`).then(
+    (i) => {
+      res.json({ curriculum: i.rows });
+    }
+  );
+};
+const getlicense = async (req, res) => {
+  await use_db(`select license from teacher_options  where license != ''`).then(
+    (i) => {
+      res.json({ license: i.rows });
+    }
+  );
 };
 const getall = async (req, res) => {
   const subjects = await use_db(
@@ -163,13 +177,15 @@ const getall = async (req, res) => {
     english: english.rows,
     current_locations: current_locations.rows,
     gender: gender.rows,
-    curriculem:curriculem.rows,
-    license:license.rows
+    curriculem: curriculem.rows,
+    license: license.rows,
   };
   res.json(data);
 };
 module.exports = {
   getgenders,
+  getlicense,
+  getcurriculems,
   getsubjects,
   getteaching_exp,
   getsalary_expectations,
